@@ -4,8 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Group A: IVAN SEMPEBWA</title>
+    <style>
+        body {
+            margin: 5rem 15rem;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            gap: 10rem;
+            border-bottom: 1px solid gray;
+        }
+
+        .navigation {
+            margin-bottom: 30px;
+        }
+
+        .navigation a:link,
+        .navigation a:visited {
+            padding: .5rem 1rem;
+            background-color: #0bb2e4;
+            color: #fff;
+            text-decoration: none;
+
+        }
+        .profile-photo img {
+            object-fit: cover;
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
 </head>
 <body>
-    <h3>IVAN SEMPEBWA</h3>
+    <nav class="navigation">
+        <a href="/">HOME</a>
+    </nav>
+    <header class="header">
+        <div class="details">
+            <h3>IVAN SEMPEBWA</h3>
+            <p>A student at Victoria University</p>
+            <p>Pursuing a Bachelors in Computer Science</p>
+            <p>Avid at problem solving</p>
+        </div>
+        <div class="profile-photo">
+            <img src="images/vu-logo.png" alt="Ivan Sempebwa">
+        </div>
+    </header>
+
 </body>
 </html>
