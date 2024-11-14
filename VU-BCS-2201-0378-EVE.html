@@ -5,7 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Group A: IVAN SEMPEBWA</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+        html { 
+            font-family: 'Nunito Sans',Arial, Helvetica, sans-serif;
+            scroll-behavior: smooth;
+        }
         body {
+            font-size: 1.4rem;
             margin: 5rem 15rem;
         }
         .header {
@@ -16,7 +22,12 @@
         }
 
         .navigation {
-            margin-bottom: 30px;
+            margin-bottom: 2rem;
+        }
+
+        .navigation a {
+            font-size: 1.5rem;
+            margin-right: 10px;
         }
 
         .navigation a:link,
@@ -25,31 +36,202 @@
             background-color: #0bb2e4;
             color: #fff;
             text-decoration: none;
+        }
+        .navigation a:hover,
+        .navigation a:active {
+            background-color: #13c8ff;
+        }
+
+        .btn {
+            background-color: #0c0404;
+            color: #fff;
+            padding: .5rem 1rem;
+            font-size: 1.3rem;
+            border-radius: .2rem;
+            border: none;
+            outline: none;
+            margin-right: .6rem;
+            margin-bottom: .5rem;
+            cursor: pointer;
 
         }
+        .sections {
+            margin-top: 1rem;
+        }
+
+        .sections a {
+            font-size: 1.6rem;
+            margin-right: 1rem;
+            padding: .5rem 1rem;
+        }
+
+        .sections a:link,
+        .sections a:visited {
+            color: #fff;
+            background-color: #0bb2e4;
+            text-decoration: none;
+        }
+
+        section {
+            margin: 3rem 0;
+        }
+
         .profile-photo img {
             object-fit: cover;
             border-radius: 50%;
             width: 200px;
             height: 200px;
         }
+
+        .footer .links {
+            display: flex;
+            margin-top: 10px;
+            border-top: 1px solid gray;
+            border-bottom: 1px solid gray;
+            padding: 1rem 0;
+            justify-content: center;
+            gap: 2rem;
+        }
+        
+        .footer .links a {
+            padding: 5px 15px;
+            border-radius: 2px;
+            margin-right: 5px;
+        }
+    
+        .footer .links a:hover {
+            background-color: #6cdbe7;
+        }
+
+        .links img {
+            display: inline-block;
+            height: 40px;
+        }
+
+        .footer .form {
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer .form input,
+        .form textarea {
+            font-size: 1.2rem;
+            padding: .5rem 1rem;
+            margin: 1rem .5rem;
+        }
     </style>
 </head>
 <body>
     <nav class="navigation">
-        <a href="/">HOME</a>
+        <a href="/">&lt; HOME</a>
     </nav>
     <header class="header">
         <div class="details">
             <h3>IVAN SEMPEBWA</h3>
-            <p>A student at Victoria University</p>
+            <p>A student at <a href="https://vu.ac.ug" target="_blank"><em>Victoria University</em></a></p>
             <p>Pursuing a Bachelors in Computer Science</p>
             <p>Avid at problem solving</p>
+            <button id="read" class="btn">Read</button><button id="pause" class="btn">Pause</button><button id="resume" class="btn">Resume</button>
+            <select id="voices"></select>
         </div>
         <div class="profile-photo">
-            <img src="images/vu-logo.png" alt="Ivan Sempebwa">
+            <img src="images/ivan/ival.jpeg" alt="Ivan Sempebwa">
         </div>
     </header>
-
+    <nav class="sections">
+        <a href="#background">Background</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contributions">Contributions</a>
+        <a href="#videos">Videos</a>
+        <a href="#socials">Social</a>
+    </nav>
+    <main>
+        <section id="background">
+            <h3>Background</h3>
+            <p>Ivan Sempebwa is a dedicated third-year Computer Science student at Victoria University, where he is pursuing a Bachelor of Science degree. Born and raised in Kampala, Uganda; Ivan developed an early interest in technology, often spending hours dismantling and reassembling old computers. This curiosity led him to excel in mathematics and science throughout secondary school, ultimately joining Victoria university.
+                At Victoria University, Ivan has taken full advantage of the opportunities available to him. He is actively involved in various student organizations, including the GDSC and MDRIVEN Bootcamp, which aims to encourage more students to pursue Codeless ModelDriven approaches to software development.
+            </p>
+        </section>
+        <section id="achievements">
+           <h3>Achievements</h3> 
+           <ol>
+            <li>
+                <h4>GDSC Certification:</h4> 
+                <p>
+                In 2023, Ivan participated in the GDSC student collaboration sessions, where he collaborated with a core team that worked on mobile application design and web technologies.
+                </p>
+            </li>
+            <li>
+                <h4>COUSERA Certifications:</h4>
+                <p>Demonstrating a commitment to expanding his skill set, Ivan has obtained various Certifications from platforms like Coursera. Thses achievements validates his understanding of essential computing principles and prepares him for future challenges in the tech industry.                
+                </p>
+            </li>
+            <li>
+                <h4>Research Contributions:</h4>
+                <p> As part of a faculty-led research project, Ivan contributed to researching System Analysis and design patterns and practices while attempting said study module. His group project work focused on researching a naunces of developing a system for reserving bus tickets for passengers electronically, which has the potential to enhance operating strategies for bus businesses.
+                </p>
+            </li>
+            <li>
+                <h4>Internship Experience: </h4>
+                <p>
+                Over the last 3 months, Ivan interned at INDEX DIGITAL (U) LTD., where he worked on a team developing software solutions for small businesses. He played a key role in designing user interfaces and improving application performance based on user feedback, database management and visual grapchics.
+                </p>
+            </li>
+           </ol>
+        </section>
+        <section id="contributions">
+            <h3>Contributions</h3>
+            <ul>
+                <li>
+                    <h4>Mentorship:</h4>
+                    <p>Ivan is passionate about giving back to the community. I volunteer as a mentor for community projects in the university's coding boot camps, GDSC and in society, helping the communities by availing himself where possible and necessary.s
+                    </p>
+                </li>
+                <li>
+                    <h4>Advocacy for Ethical use of Tech:</h4>
+                    <p> As an active student of Ethical and professional issues in IT, Ivan prioritises ethical values in the application and use of computer system and intends to join relevant professional bodies within the tech community to foster mutual growth.
+                    </p>
+                </li>
+                <li>
+                    <h4>Open Source Projects:</h4>
+                    <p>
+                    Ivan has contributed to several open-source projects on GitHub, focusing on improving accessibility features for web applications. Ivan's commitment to making technology more inclusive reflects his belief that everyone should have access to digital resources.
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <section id="videos">
+            <iframe width="885" height="498" src="https://www.youtube.com/embed/1PvjRIkwIl8" title="Fair Use - Copyright on YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+    </main>
+    <footer class="footer">
+        <p id="socials">Connect with me</p>
+        <div class="links">
+            <a href="https://developers.google.com/profile/u/macrodev22" target="_blank"><img src="images/ivan/gdsc.webp" /></a>
+            <a href="https://linkedin.com/in/sempebwa-ivan-9168a9121" target="_blank"><img src="images/ivan/linkedin.png" /></a>
+            <a href="https://facebook.com/ivan.sempebwa" target="_blank" ><img  src="images/ivan/fb.svg" /></a>
+            <a href="https://youtube.com/@ivansempebwa4885" target="_blank"><img src="images/ivan/youtube.png" /></a>
+            <a href="https://github.com/macrodev22" target="_blank"><img src="images/ivan/github.png" /></a>
+            <a href="https://x.com/@gottliebtmich1" target="_blank"><img src="images/ivan/twitter.svg" /></a>
+            <a href="https://whatsapp.com/" target="_blank"><img src="images/ivan/whatsapp.png" /></a>
+        </div>
+        <div class="contact-form-container">
+            <form class="form">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="tel" placeholder="Phone number" id="phone-input">
+                <div>
+                    <input type="radio" name="gender" id="male" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="female" value="female">
+                    <label for="female">Female</label>
+                </div>
+                <textarea placeholder="Message" rows="10" cols="30"></textarea>
+                <button type="submit" class="btn">✉️ Send</button>
+            </form>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
