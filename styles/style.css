@@ -1,4 +1,6 @@
-*, *::after, *::before {
+*,
+*::after,
+*::before {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -35,4 +37,27 @@ h1 {
 
 .logo {
     height: 80px;
+}
+
+.nav-container {
+    counter-reset: members;
+}
+
+.nav-container a {
+    position: relative;
+    left: 3rem;
+}
+
+.nav-container a span {
+    color: #d76e16;
+}
+
+.nav-container a::before {
+    display: block;
+    position: absolute;
+    counter-increment: members;
+    content: counter(members);
+    left: -2rem;
+    top: 50%;
+    transform: translateY(-50%);
 }
