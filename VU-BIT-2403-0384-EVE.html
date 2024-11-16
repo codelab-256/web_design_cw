@@ -47,8 +47,6 @@
         }
 
         .banners {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
             margin-top: 20px;
         }
 
@@ -86,13 +84,17 @@
         <textarea></textarea>
         <input type="submit" value="Send">
     </form>
-    <div class="banners">
-        <img src="images/francis/0e9e49dc-2b61-4fe3-8bdb-940129c23cf4.jpg" />
-        <img src="images/francis/3c3aa598-c5f7-47b7-8670-b9b4598fcb6b.jpg" />
-        <img src="images/francis/4715da3a-6eae-4372-a4f4-5db17ec6ccac.jpg" />
-        <img src="images/francis/df82347f-0b32-4942-a837-44470997909c.jpg" />
+    <table class="banners">
+        <tr>
+            <td><img src="images/francis/0e9e49dc-2b61-4fe3-8bdb-940129c23cf4.jpg" /></td>
+            <td><img src="images/francis/3c3aa598-c5f7-47b7-8670-b9b4598fcb6b.jpg" /></td>
+        </tr>
+        <tr>
+            <td><img src="images/francis/4715da3a-6eae-4372-a4f4-5db17ec6ccac.jpg" /></td>
+            <td><img src="images/francis/df82347f-0b32-4942-a837-44470997909c.jpg" /></td>
+        </tr>
 
-    </div>
+    </table>
 </body>
 </head>
 
