@@ -50,6 +50,7 @@ h1 {
 
 .nav-container a span {
     color: #d76e16;
+    text-transform: uppercase;
 }
 
 .nav-container a::before {

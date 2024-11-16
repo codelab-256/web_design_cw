@@ -7,21 +7,62 @@
         body {
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-size: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .hd {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 500px;
+            background-image: url('./images/francis/50c99193-80ee-4642-8a1a-d74e6c265828.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .profile {
+            height: 400px;
+            width: 400px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        p {
+            max-width: 600px;
         }
 
         form {
             display: flex;
             flex-direction: column;
             gap: 10px;
+            margin-top: 20px;
         }
 
         form>* {
             font-family: inherit;
             font-size: inherit;
         }
+
+        .banners {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-top: 20px;
+        }
+
+        .banners img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
     </style>
 
 <body>
+    <div class="hd">
+        <img src="images/francis/IMG_0017.jpg" class="profile" />
+    </div>
     <h2>My name is Compare Francis</h2>
     <p>I am a male aged 24 years. I am a ugandan youth with all the kiganda values. I speak English Luganda and
         Lunyankole;</p>
@@ -37,6 +78,7 @@
         high schools in Ibanda. I am as well born in a village called KItontoma, Bisheshe Sub-county,Ibanda county,
         Municipaliy, Ibanda District.
     </p>
+    <img src="images/francis/8791c85f-a6ee-4416-9a39-f89b6b9c5404.jpg" />
     <form>
         <input type="text" placeholder="Name">
         <input type="email" placeholder="Email">
@@ -44,6 +86,13 @@
         <textarea></textarea>
         <input type="submit" value="Send">
     </form>
+    <div class="banners">
+        <img src="images/francis/0e9e49dc-2b61-4fe3-8bdb-940129c23cf4.jpg" />
+        <img src="images/francis/3c3aa598-c5f7-47b7-8670-b9b4598fcb6b.jpg" />
+        <img src="images/francis/4715da3a-6eae-4372-a4f4-5db17ec6ccac.jpg" />
+        <img src="images/francis/df82347f-0b32-4942-a837-44470997909c.jpg" />
+
+    </div>
 </body>
 </head>
 
