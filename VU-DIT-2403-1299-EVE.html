@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aaron Olao's Biography</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #4CAF50;
+        }
+
+        .social-links a {
+            margin-right: 10px;
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        form input,
+        form textarea,
+        form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="images/aaron/Aaron.jpg" alt="Aaron Olao's Photo">
+        <h1>Aaron Olao</h1>
+        <p>Student | Traffic Manager | Radio Presenter | Social Media Manager</p>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>About Me</h2>
+            <p>Hello! My name is Aaron Olao. I am currently a student at Victoria University pursuing a Diploma in
+                Information Technology. I was born on November 21, 1990, and raised in Lira City.</p>
+            <p>I attended St. Kizito Primary School in Lira, Comboni College, and Tororo Progressive Academy for my O
+                and A levels. I am passionate about media and IT, and I love connecting with people.</p>
+        </section>
+
+        <section>
+            <h2>Work Experience</h2>
+            <p>I am currently employed as a Traffic Manager, Radio Presenter, and Social Media Manager at Radio Unity FM
+                in Lira (2018–present). Previously, I held similar positions at Radio QFM from 2014 to 2018.</p>
+        </section>
+
+        <iframe src="https://www.youtube.com/embed/9BjrCcXg0qY" allowfullscreen></iframe>
+        </section>
+        <section>
+            <h2>Follow Me</h2>
+            <p>Connect with me on social media and follow my journey:</p>
+            <div class="social-links">
+                <a href="https://tiktok.com/@aaronebwola" target="_blank">TikTok</a>
+                <a href="https://x.com/@aaronebwola" target="_blank">X</a>
+                <a href="https://instagram.com/@aaronebwola" target="_blank">Instagram</a>
+                <a href="https://facebook.com/@aaronebwola" target="_blank">Facebook</a>
+                <a href="https://threads.net/@aaronebwola" target="_blank">Threads</a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:aaronolao@gmail.com">aaronolao@gmail.com</a></p>
+            <p>Phone/WhatsApp: 0772003596</p>
+        </section>
+
+        <section>
+            <h2>Feedback</h2>
+            <form action="submit_feedback.php" method="POST">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="message">Your Feedback</label>
+                <textarea id="message" name="message" rows="5" placeholder="Enter your feedback" required></textarea>
+
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </section>
+    </div>
+
+</body>
+
+</html>
