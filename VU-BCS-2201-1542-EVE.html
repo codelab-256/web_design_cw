@@ -162,7 +162,9 @@
             object-fit: contain;
         }
 
-
+		a{
+        text-decoration:none;
+        }
 
         .center {
             text-align: center;
@@ -170,6 +172,11 @@
 
         li {
             list-style: none;
+        } 
+        .video{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         }
 
 
@@ -216,11 +223,10 @@
 
         <header>
             <nav class="row container">
-                <h1 class="nav-logo">Eric Muhwezi</h1>
+                <h1 class="nav-logo"><a href="#home">Eric Muhwezi</a></h1>
                 <div class="nav-links">
-                    <a href="#about">About</a>
                     <a href="#skills">Skills</a>
-                    <a href="#projects">Projects</a>
+                    <a href="#about">About</a>
                     <a href="#contact">Contact</a>
                 </div>
             </nav>
@@ -302,19 +308,16 @@
                     have helped me
                     refine my technical
                     and instructional abilities, allowing me to grow as both a developer and a mentor. <br />My
-                    background as
-                    an Technical trainer
-                    manager at Kampabits has taught me how to lead effectively, organize projects, and collaborate with
-                    diverse teams—all of
-                    which I bring to my current studies and projects. My goal is to apply this blend of skills toward
-                    creating innovative
-                    technology that has a meaningful impact.</p>
+                   .</p>
             </div>
 
         </section>
 
-        <section class="cards">
-
+        <section class="video container">
+        <iframe width="966" height="543" src="https://www.youtube.com/embed/sQ22pm-xvrE" 
+        title="4K 100% Royalty-Free Stock Footage | Technology HUD Element Intro Background | No Copyright Video" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
 
         <section class="contact-form container " id="contact">
@@ -349,10 +352,10 @@
             <p class="logo pacifico-regular">Eric Muhwezi</p>
             <nav>
                 <ul class="row">
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Projects</li>
-                    <li>Contact</li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                   
                 </ul>
             </nav>
             <div class="social-icons row">
