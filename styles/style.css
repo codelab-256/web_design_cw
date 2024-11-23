@@ -13,6 +13,11 @@ html {
 body {
     padding: 10px;
     font-size: 20pt;
+    background: url('../images/bg_home.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
 }
 
 .navigation-left a:link,
@@ -33,16 +38,22 @@ h1 {
     text-align: center;
     display: flex;
     justify-content: space-between;
+    font-size: 2.9rem;
 }
 
 h1,
 h2 {
-    color: #fff;
+    color: #111;
 }
 
-body {
-    background: url('../images/background.jpg');
+.headings {
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    background-color: #ffffffbb;
+    backdrop-filter: blur(4px);
+    padding: 1rem .5rem;
 }
+
 
 .logo {
     height: 80px;
@@ -50,6 +61,10 @@ body {
 
 .nav-container {
     counter-reset: members;
+    border-radius: 1rem;
+    background-color: #ffffffbb;
+    backdrop-filter: blur(4px);
+    padding: 1rem .5rem;
 }
 
 .nav-container a {
