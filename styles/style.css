@@ -35,7 +35,7 @@ body {
 }
 
 h1 {
-    text-align: center;
+    text-align: left;
     display: flex;
     justify-content: space-between;
     font-size: 2.9rem;
@@ -85,4 +85,28 @@ h2 {
     left: -2rem;
     top: 50%;
     transform: translateY(-50%);
+}
+
+@media (max-width: 1050px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    body {
+        font-size: 80%;
+    }
+}
+
+@media (max-width: 510px) {
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    .nav-container a {
+        left: 1rem;
+    }
+
+    .nav-container a::before {
+        left: -1rem;
+    }
 }
